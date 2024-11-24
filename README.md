@@ -5,6 +5,7 @@
 ## Miembros del grupo: 
 - **Josué David Echeverría Pérez - 2022093947**
 
+## Repositorio: https://github.com/Josue-Echeverria/ProyectoSIG3
 
 ## Descripción
 El proyecto representa algunos puntos de interés del cantón de Pococí, mediante el uso de un mapa mosaico creado en TileMill. Este mapa utilizó los *Shapefile* que se encuentran en el directorio `./shapefiles`, los cuales poseen la información necesaria para representar:
