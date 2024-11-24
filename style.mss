@@ -121,10 +121,17 @@ Map {
   marker-line-color:#813;
   marker-allow-overlap:true;
   marker-ignore-placement:true;
+  marker-width: 19; 
+  marker-height: 19; 
+  [zoom > 16] {
+    marker-width: 22; 
+    marker-height: 22; 
+  }
+  
   [zoom > 17] {
     text-name:"[name]";
     text-face-name: "DejaVu Sans Book";
-    text-size: 8;
+    text-size: 10;
     text-fill: #000000;
     text-halo-radius: 1;
     text-placement: point; 
@@ -132,13 +139,21 @@ Map {
   }
   [fclass = 'hotel'], [fclass = 'motel'], [fclass = 'hostel'], [fclass = 'guesthouse']{
     marker-file: url("/home/node/hotel.png");
-    marker-width: 36;  
-    marker-height: 22; 
+    marker-width: 25;  
+    marker-height: 15; 
+    [zoom > 16] {
+      marker-width: 36;  
+      marker-height: 22; 
+    }
   }
   [fclass = 'restaurant'], [fclass = 'fast_food'], [fclass = 'cafe']{
     marker-file: url("/home/node/restaurant.png");
-    marker-width: 36; 
+    marker-width: 30; 
     marker-height: 22; 
+    [zoom > 16] {
+      marker-width: 39; 
+      marker-height: 26; 
+    }
   }
   [fclass = 'police']{
     marker-file: url("/home/police.png");
@@ -147,28 +162,24 @@ Map {
   }
   [fclass = 'doctors'], [fclass = 'clinic'], [fclass = 'pharmacy']{
     marker-file: url("/home/hospital.png");
-    marker-width: 22; 
-    marker-height: 22; 
   }
   [fclass = 'supermarket'], [fclass = 'market_place'], [fclass = 'department_store'],[fclass = 'gift_shop'], [fclass = 'convenience'], [fclass = 'greengrocer']{
     marker-file: url("/home/node/market.png");
-    marker-width: 22; 
-    marker-height: 22; 
   }
   [fclass = 'bar'], [fclass = 'pub'], [fclass = 'beverages']{
     marker-file: url("/home/node/bar.png");
-    marker-width: 22; 
-    marker-height: 22; 
   }
   [fclass = 'park'], [fclass = 'attraction'], [fclass = 'playground'], [fclass = 'camp_site'],[fclass = 'alpine_hut']{
     marker-file: url("/home/node/park.png");
-    marker-width: 22; 
-    marker-height: 22; 
   }
   [fclass = 'viewpoint'], [fclass = 'tourist_info']{
     marker-file: url("/home/node/R.png");
-    marker-width: 26; 
-    marker-height: 22; 
+    marker-width: 18; 
+    marker-height: 14; 
+    [zoom > 16] {
+      marker-width: 26; 
+      marker-height: 22; 
+    }
   }
   [fclass = 'bank']{
     marker-file: url("/home/node/museum.png");
@@ -192,48 +203,32 @@ Map {
   }
   [fclass = 'butcher']{
     marker-file: url("/home/node/meat.png");
-    marker-width: 22; 
-    marker-height: 22; 
   }
   [fclass = 'shoe_shop']{
     marker-file: url("/home/node/shoe.png");
-    marker-width: 22; 
-    marker-height: 22; 
   }
   [fclass = 'jeweller']{
     marker-file: url("/home/node/diamond.png");
-    marker-width: 22; 
-    marker-height: 22; 
   }
   [fclass = 'bicycle_shop']{
     marker-file: url("/home/node/bicycle.png");
-    marker-width: 22; 
-    marker-height: 22; 
+    marker-width: 29; 
+    marker-height: 29; 
   }
   [fclass = 'dentist']{
     marker-file: url("/home/node/teeth.png");
-    marker-width: 22; 
-    marker-height: 22; 
   }
   [fclass = 'bakery']{
     marker-file: url("/home/node/bread.png");
-    marker-width: 22; 
-    marker-height: 22; 
   }
   [fclass = 'veterinary']{
     marker-file: url("/home/node/vet.png");
-    marker-width: 22; 
-    marker-height: 22; 
   }
   [fclass = 'hairdresser'] , [fclass = 'beauty_shop']{
     marker-file: url("/home/node/barber.png");
-    marker-width: 22; 
-    marker-height: 22; 
   }
   [fclass = 'car_dealership'], [fclass = 'car_rental']{
-    marker-file: url("/home/node/car.png");
-    marker-width: 22; 
-    marker-height: 22; 
+    marker-file: url("/home/node/car.png"); 
   }
   [fclass = 'bench']
     , [fclass = 'community_centre']
@@ -258,5 +253,9 @@ Map {
     , [fclass = 'atm']
     , [fclass = 'comms_tower']{
     marker-opacity:0;
+    text-name:"[name]";
+    text-face-name: "DejaVu Sans Book";
+    text-size: 0;
+    text-opacity:0;
   }
 }
