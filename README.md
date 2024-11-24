@@ -2,7 +2,7 @@
 
 ## Miembros del grupo: 
 - **Josué David Echeverría Pérez - 2022093947**
-- 
+
 ## Hosteado en: https://josue-echeverria.github.io/ProyectoSIG3/
 
 ## Repositorio: https://github.com/Josue-Echeverria/ProyectoSIG3
