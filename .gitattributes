@@ -1,2 +1,0 @@
-*.mbtiles merge=lfs eol=lf
-Proyecto3_5.mbtiles filter=lfs diff=lfs merge=lfs -text
